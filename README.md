@@ -5,12 +5,12 @@ There is very little quality information online about Angular SEO how-to's. This
 
 ##Usage
 ####1. Include ngSeo.js in your index.html
-````
+```html
 <script src="/path/to/ngSeo.js"></script>
-````
+```
 
 ####2. Inject ngSeo in your module/controller/directive
-````
+```javascript
 angular.module("myModule", ["ngSeo"])
 
 .directive("myDirective", ["ngSeo", function(ngSeo) {
@@ -27,14 +27,14 @@ angular.module("myModule", ["ngSeo"])
     }
   };	
 }]);
-````
+```
 
 ####3. Bind your html
-````
+```html
 //File: index.html
 //use ng-bind when the property is textual, between two closing tags
 <title ng-bind="ngSeo.get('title')"></title>
 
 //use {{SeoHelper.get('my property')}} when the property is a meta tag
 <meta property="og:url" content="{{ngSeo.get('og:url')}}" />
-````
+```
