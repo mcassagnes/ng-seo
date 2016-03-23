@@ -1,4 +1,4 @@
-# angular-seohelper
+# ngSeo
 Manage SEO tags in Angular 1.x
 
 There is very little good quality information online about Angular SEO how-to's. This module aims to provide the simplest possible solution to managing your SEO tags in an Angular app.
