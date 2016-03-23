@@ -4,12 +4,12 @@ Manage SEO tags in Angular 1.x
 There is very little quality information online about Angular SEO how-to's. This module aims to provide the simplest possible solution to manage your SEO tags in an Angular app.
 
 ##Usage
-1. Include ngSeo.js in your index.html
+###1. Include ngSeo.js in your index.html
 ````
 <script src="/path/to/ngSeo.js"></script>
 ````
 
-2. Inject ngSeo in your module/controller/directive
+###2. Inject ngSeo in your module/controller/directive
 ````
 angular.module("myModule", ["ngSeo"])
 
@@ -29,7 +29,7 @@ angular.module("myModule", ["ngSeo"])
 }]);
 ````
 
-3. Bind your html
+###3. Bind your html
 ````
 //File: index.html
 //use ng-bind when the property is textual, between two closing tags
