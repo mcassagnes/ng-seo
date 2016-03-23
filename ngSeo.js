@@ -6,6 +6,10 @@
   .run(["$rootScope", "ngSeo", function($rootScope, ngSeo) {
     ngSeo.init();
     $rootScope.ngSeo = ngSeo;
+
+    $rootScope.$on('$locationChangeStart', function(event, next, current) {
+      ngSeo.init();      
+    });
   }])
 
   .service("ngSeo", [function() {
